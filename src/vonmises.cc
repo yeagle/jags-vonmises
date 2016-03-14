@@ -1,5 +1,6 @@
 #include <module/Module.h>
 #include <distributions/DVonMises.h>
+#include <functions/DLogVonMisesFun.h>
 
 using std::vector;
 
@@ -16,6 +17,7 @@ VONMISESModule::VONMISESModule() : Module("vonmises")
 {
   //load distributions
   insert(new DVonMises);
+  insert(new DLogVonMisesFun);
 }
 
 VONMISESModule::~VONMISESModule() 

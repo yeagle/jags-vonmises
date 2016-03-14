@@ -1,4 +1,4 @@
-SUBDIRS = distributions 
+SUBDIRS = distributions functions
 
 jagsmod_LTLIBRARIES = vonmises.la
 
@@ -7,6 +7,7 @@ vonmises_la_SOURCES = vonmises.cc
 vonmises_la_CPPFLAGS = -I$(includedir)/JAGS
 
 vonmises_la_LIBADD = distributions/vonmisesdist.la
+vonmises_la_LIBADD += functions/vonmisesfunc.la
 			
 if WINDOWS
 vonmises_la_LIBADD += -ljags-$(JAGS_MAJOR) -ljrmath-0

@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.68])
 
-AC_INIT([JAGS-VONMISES-MODULE],[0.1],[dominik.wabersich@gmail.com],[JAGS-VONMISES-MODULE])
+AC_INIT([JAGS-VONMISES-MODULE],[0.2],[dominik.wabersich@gmail.com],[JAGS-VONMISES-MODULE])
 JAGS_MAJOR=4
 JAGS_MINOR=0
 AC_SUBST(JAGS_MAJOR)
@@ -43,6 +43,7 @@ AC_CONFIG_FILES([
   libltdl/Makefile
   src/Makefile
   src/distributions/Makefile	
+  src/functions/Makefile	
   win/Makefile
 ])
 AC_OUTPUT
