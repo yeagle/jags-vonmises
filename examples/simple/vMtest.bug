@@ -1,0 +1,7 @@
+#a simple von Mises model
+model{
+	for(i in 1:N){
+		x[i] ~ dvonmises(m[i], precision)
+	}
+	precision ~ dgamma(0.1, 0.1)
+}
